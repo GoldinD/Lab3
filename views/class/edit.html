@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Class List: Create</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <!-- Needed to include "/class" in order to fix the route-->
+    <form action="/class/api/edit" method="post">
+    <div>
+            <label for="studentNameOriginal">Please Enter In The Student's Name You Would Like To Edit</label>
+            <input type="text" id="studentNameOriginal" name="studentNameOriginal">
+    </div>
+    <div>
+            <label for="studentName">Please Enter In The Student's Name</label>
+            <input type="text" id="studentName" name="studentName">
+    </div>
+
+    <div>
+            <label for="studentNumber">Please Enter In The Student's Number</label>
+            <input type="text" id="studentNumber" name="studentNumber">
+    </div>
+    <div class="button">
+        <button type="submit">Submit Changes</button>
+    </div>
+</form>
+
+<form action="/class/api/list" method="get">
+    <div class="button">
+        <button type="submit">View Class List</button>
+    </div>
+</form>
+
+</body>
+</html>
